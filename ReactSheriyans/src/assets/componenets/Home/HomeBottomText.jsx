@@ -4,10 +4,14 @@ import { Link } from "react-router-dom";
 
 const HomeBottomText = () => {
   return (
-    <div className='justify-center  gap-2 items-center flex font-[font500] text-white '>
-      <Link className='text-[6.5vw] border-2  leading-[5vw] pt-5 px-10 uppercase border-white rounded-full pb-2'>Projects</Link>
-      <Link className='text-[6.5vw] border-2  leading-[5vw] pt-5 px-10 uppercase border-white rounded-full pb-2'>Agencess</Link>
-      
+    <div className='justify-center  gap-2 items-center flex font-[font500] text-white hover:border-green-300'>
+      <div className='border-3 h-32 flex items-center px-10 border-white rounded-full uppercase hover:border-green-300 hover:text-green-300'>
+        <Link className='text-[6vw] mt-3 ' to='/project'>Projects</Link>
+      </div>
+      <div className='border-3 h-32 flex items-center px-10 border-white rounded-full uppercase hover:border-green-300 hover:text-green-300'>
+        <Link className='text-[6vw] mt-3 ' to='/Ages
+        '>Agencess</Link>
+      </div>
     </div>
   )
 }
